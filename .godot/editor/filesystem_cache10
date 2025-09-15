@@ -1,21 +1,21 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1757946562
+::res://::1757946791
 Characters_Shark.fbx::PackedScene/PackedScene::6320219952088287875::1757937188::1757937189::1::::<><><>0<>0<>fcdf0abbe1a04fc64470ad729322e987<>res://.godot/imported/Characters_Shark.fbx-9814048135317971e2cd59df984db9d3.scn::uid://chqmcwv6sfemc::::res://Characters_Shark_0.png
 Characters_Shark_0.png::CompressedTexture2D/CompressedTexture2D::5297926681805742226::1757937189::1757937190::1::::<><><>0<>0<>51783377806e4121419c1353bb330271<>res://.godot/imported/Characters_Shark_0.png-c3b398b16b8f427b59f17bc303950152.s3tc.ctex::
 icon.webp::CompressedTexture2D/CompressedTexture2D::27118964165343846::1707179290::1757936982::1::::<><><>0<>0<>2765b228073266418cb0e013965e5088<>res://.godot/imported/icon.webp-e94f9a68b0f625a567a797079e4d325f.ctex::
 Main.gd::GDScript/GDScript::3519511877723736220::1707179290::0::1::::<>Node<><>0<>0<><>::
-Main.tscn::PackedScene::1946344858681233962::1757938833::0::1::::<><><>0<>0<><>::uid://bqe431pwfwpkm::::res://Main.gd<>uid://dp478jyugrn7o::::res://Player.tscn<>uid://ha0ar5s2c3m4::::res://Mob.tscn<>uid://cqquurjk1i7yw::::res://ui_theme.tres<>uid://onvb638hnne2::::res://ScoreLabel.gd<>uid://w6q154of4cmf::::res://Ship/Ship_Large.fbx<>uid://eemwh1w0flys::::res://fonts/Arundina.ttf<>uid://n87jqhfijjjm::::res://Rocks-IFU6cm2Xow/Environment_Cliff2.fbx<>uid://qcbod8hugyfh::::res://Rocks-e1rgb5i2kF/Environment_Cliff1.fbx<>uid://bdov43jxp3xhy::::res://Small Ship/Ship_Small.fbx
+Main.tscn::PackedScene::1946344858681233962::1757946575::0::1::::<><><>0<>0<><>::uid://bqe431pwfwpkm::::res://Main.gd<>uid://dp478jyugrn7o::::res://Player.tscn<>uid://ha0ar5s2c3m4::::res://Mob.tscn<>uid://cqquurjk1i7yw::::res://ui_theme.tres<>uid://onvb638hnne2::::res://ScoreLabel.gd<>uid://w6q154of4cmf::::res://Ship/Ship_Large.fbx<>uid://eemwh1w0flys::::res://fonts/Arundina.ttf<>uid://n87jqhfijjjm::::res://Rocks-IFU6cm2Xow/Environment_Cliff2.fbx<>uid://qcbod8hugyfh::::res://Rocks-e1rgb5i2kF/Environment_Cliff1.fbx<>uid://bdov43jxp3xhy::::res://Small Ship/Ship_Small.fbx
 Mob.gd::GDScript/GDScript::4926166369529059834::1707179290::0::1::::<>CharacterBody3D<><>0<>0<><>::
-Mob.tscn::PackedScene::492840770380503333::1757938833::0::1::::<><><>0<>0<><>::uid://ccgjif5cdnt35::::res://Mob.gd<>uid://bicorb7we351t::::res://art/mob.glb<>uid://cwbtdmxs32ojb::::res://Characters_Shark.fbx
-MusicPlayer.tscn::PackedScene::7378429972161156108::1757936996::0::1::::<><><>0<>0<><>::uid://c5qpnfga41t4p::::res://art/House In a Forest Loop.ogg
+Mob.tscn::PackedScene::492840770380503333::1757946575::0::1::::<><><>0<>0<><>::uid://ccgjif5cdnt35::::res://Mob.gd<>uid://bicorb7we351t::::res://art/mob.glb<>uid://cwbtdmxs32ojb::::res://Characters_Shark.fbx
+MusicPlayer.tscn::PackedScene/PackedScene::7378429972161156108::1757936996::0::1::::<><><>0<>0<><>::uid://c5qpnfga41t4p::::res://art/House In a Forest Loop.ogg
 Player.gd::GDScript/GDScript::5306760813340271562::1711382817::0::1::::<>CharacterBody3D<><>0<>0<><>::
-Player.tscn::PackedScene::8273964046187778922::1757938833::0::1::::<><><>0<>0<><>::uid://chuvttalxeuak::::res://Player.gd<>uid://d0ypm0v45pwdv::::res://art/player.glb<>uid://bw6lfrfxjp2br::::res://Rabbit_Blond.fbx
+Player.tscn::PackedScene::8273964046187778922::1757946575::0::1::::<><><>0<>0<><>::uid://chuvttalxeuak::::res://Player.gd<>uid://d0ypm0v45pwdv::::res://art/player.glb<>uid://bw6lfrfxjp2br::::res://Rabbit_Blond.fbx
 Rabbit_Blond.fbx::PackedScene/PackedScene::3995248671674259271::1757937067::1757937068::1::::<><><>0<>0<>b1d6beb465c36963aa496850a7a85480<>res://.godot/imported/Rabbit_Blond.fbx-4d8c4946d679a0b5eecd3239ddc4d92b.scn::uid://c2fakcwhmahhg::::res://Rabbit_Blond_0.png
 Rabbit_Blond_0.png::CompressedTexture2D/CompressedTexture2D::6678280031688914096::1757937067::1757937069::1::::<><><>0<>0<>4ba6008d5d7568bc3f62ce9e92485488<>res://.godot/imported/Rabbit_Blond_0.png-d59be2d7ae5f3f382395bedd165d38b9.s3tc.ctex::
 README.md::TextFile/TextFile::-1::1707179290::0::1::::<><><>0<>0<><>::
 ScoreLabel.gd::GDScript/GDScript::1010759237364858703::1707179290::0::1::::<>Label<><>0<>0<><>::
 ui_theme.tres::Theme/Theme::5930143872682747302::1707179290::0::1::::<><><>0<>0<><>::uid://cyxhh7ddkn62q::::res://fonts/Montserrat-Medium.ttf
-::res://art/::1757936983
+::res://art/::1757946686
 body.tres::StandardMaterial3D/StandardMaterial3D::-1::1707179290::0::1::::<><><>0<>0<><>::
 eye.tres::StandardMaterial3D/StandardMaterial3D::-1::1707179290::0::1::::<><><>0<>0<><>::
 House In a Forest Loop.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::6912470962729766485::1707179290::1757936982::1::::<><><>0<>0<>ca11219f684f6cd2af90d4e6cdaead58<>res://.godot/imported/House In a Forest Loop.ogg-1a6a72ae843ad792b7039931227e8d50.oggvorbisstr::
@@ -24,22 +24,22 @@ mob_body.tres::StandardMaterial3D/StandardMaterial3D::-1::1707179290::0::1::::<>
 mob_eye.tres::StandardMaterial3D/StandardMaterial3D::-1::1707179290::0::1::::<><><>0<>0<><>::
 player.glb::PackedScene/PackedScene::8964461739428881931::1707179290::1757936983::1::::<><><>0<>0<>888faf6ae4281eadd09c6bedcc72b9b7<>res://.godot/imported/player.glb-08dcfb373480a049995065542e37637b.scn::
 pupil.tres::StandardMaterial3D/StandardMaterial3D::-1::1707179290::0::1::::<><><>0<>0<><>::
-::res://fonts/::1757938449
+::res://fonts/::1757946686
 Arundina.ttf::FontFile/FontFile::289781185809037542::1757938449::1757938449::1::::<><><>0<>0<>873b48d19e6b4084292b92e1e812159c<>res://.godot/imported/Arundina.ttf-201552dd39433a1b96227e7a87fe21db.fontdata::
 LICENSE.txt::TextFile/TextFile::-1::1707179290::0::1::::<><><>0<>0<><>::
 Montserrat-Medium.ttf::FontFile/FontFile::6505293508080888906::1707179290::1757936982::1::::<><><>0<>0<>07233739ee8ed56ec1cb0f04a4ff2983<>res://.godot/imported/Montserrat-Medium.ttf-e832861e4ad4110e172112dc430c04b0.fontdata::
-::res://Rocks/::1757937497
+::res://Rocks/::1757946686
 UI_Rocks.fbx::PackedScene/PackedScene::2397766504679384603::1757937496::1757937496::1::::<><><>0<>0<>b66495279c71d71a04d46721daec879f<>res://.godot/imported/UI_Rocks.fbx-4f12e837cc5f808b6f25a66ea52c951c.scn::uid://bdmi0dg3sxm83::::res://Rocks/UI_Rocks_0.png
 UI_Rocks_0.png::CompressedTexture2D/CompressedTexture2D::2622290296581711494::1757937496::1757937497::1::::<><><>0<>0<>31c566dbb5185dfc3eb5878ffb75c15e<>res://.godot/imported/UI_Rocks_0.png-9cbee39ec811f528db6d896647419459.s3tc.ctex::
-::res://Rocks-e1rgb5i2kF/::1757937538
+::res://Rocks-e1rgb5i2kF/::1757946686
 Environment_Cliff1.fbx::PackedScene/PackedScene::1127236180717707297::1757937537::1757937538::1::::<><><>0<>0<>36de57baeb7202e0cb05a1503872ad2b<>res://.godot/imported/Environment_Cliff1.fbx-5c69f5f01680a93db72d1c27b01f1da7.scn::uid://bqofbmuuc4rpk::::res://Rocks-e1rgb5i2kF/Environment_Cliff1_0.png
 Environment_Cliff1_0.png::CompressedTexture2D/CompressedTexture2D::3538649503305024468::1757937538::1757937538::1::::<><><>0<>0<>35c0178166f82b89c454eb458f2c7537<>res://.godot/imported/Environment_Cliff1_0.png-a12d1cf53e82a9c73035bf6533a47103.s3tc.ctex::
-::res://Rocks-IFU6cm2Xow/::1757937547
+::res://Rocks-IFU6cm2Xow/::1757946686
 Environment_Cliff2.fbx::PackedScene/PackedScene::982539300517529994::1757937546::1757937547::1::::<><><>0<>0<>fbefc2ff684d68c985e1809d5ec701ce<>res://.godot/imported/Environment_Cliff2.fbx-163059f70a7b9ba1e72ca53fc2c3405d.scn::uid://cmx403qyfc46o::::res://Rocks-IFU6cm2Xow/Environment_Cliff2_0.png
 Environment_Cliff2_0.png::CompressedTexture2D/CompressedTexture2D::5664395113491735168::1757937546::1757937547::1::::<><><>0<>0<>71c3221a7ba75892e4a47d4da219600e<>res://.godot/imported/Environment_Cliff2_0.png-6057326a328a7f707624c971ed905548.s3tc.ctex::
-::res://Ship/::1757937517
+::res://Ship/::1757946686
 Ship_Large.fbx::PackedScene/PackedScene::1609169794082108765::1757937515::1757937516::1::::<><><>0<>0<>86997c6f3fe4a50c836f2d38b63c5ea5<>res://.godot/imported/Ship_Large.fbx-435f9159cef1b52c4874a9de787fc2af.scn::uid://dqbewvvjqupw6::::res://Ship/Ship_Large_0.png
 Ship_Large_0.png::CompressedTexture2D/CompressedTexture2D::8284631218341204807::1757937516::1757937517::1::::<><><>0<>0<>0a0599d13619d399ba9f1efb7b1515f8<>res://.godot/imported/Ship_Large_0.png-7e52de68ee77839829b252a9ca45e620.s3tc.ctex::
-::res://Small Ship/::1757937530
+::res://Small Ship/::1757946686
 Ship_Small.fbx::PackedScene/PackedScene::2627216833658603730::1757937529::1757937530::1::::<><><>0<>0<>f1ee89656ab1299bff4bfcc7a06b88ee<>res://.godot/imported/Ship_Small.fbx-1df3627f95e9d88cda9b546693abc882.scn::uid://crsjlwperu1uk::::res://Small Ship/Ship_Small_0.png
 Ship_Small_0.png::CompressedTexture2D/CompressedTexture2D::6003777784364726282::1757937530::1757937530::1::::<><><>0<>0<>d489c92eb8919c6f79ca5c2f0c84f918<>res://.godot/imported/Ship_Small_0.png-a5e3b6e4e23311cf6e299099ba9e03b6.s3tc.ctex::
