@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crsjlwperu1uk"
-path.s3tc="res://.godot/imported/Ship_Small_0.png-a5e3b6e4e23311cf6e299099ba9e03b6.s3tc.ctex"
+uid="uid://c2fakcwhmahhg"
+path.s3tc="res://.godot/imported/Rabbit_Blond_0.png-d59be2d7ae5f3f382395bedd165d38b9.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "219f43be043845c1039f47f20d5b6de4"
+"md5": "deb4136320a09128a91dae0c35c66c97"
 }
 
 [deps]
 
-source_file="res://Small Ship/Ship_Small_0.png"
-dest_files=["res://.godot/imported/Ship_Small_0.png-a5e3b6e4e23311cf6e299099ba9e03b6.s3tc.ctex"]
+source_file="res://Rabbit_Blond_0.png"
+dest_files=["res://.godot/imported/Rabbit_Blond_0.png-d59be2d7ae5f3f382395bedd165d38b9.s3tc.ctex"]
 
 [params]
 

@@ -1,13 +1,21 @@
-[gd_scene load_steps=15 format=3 uid="uid://2y3ar4s86yra"]
+[gd_scene load_steps=21 format=3 uid="uid://2y3ar4s86yra"]
 
-[ext_resource type="Script" uid="uid://ddcr6u40xfm5n" path="res://Main.gd" id="1"]
+[ext_resource type="Script" uid="uid://bqe431pwfwpkm" path="res://Main.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://dp478jyugrn7o" path="res://Player.tscn" id="2"]
 [ext_resource type="PackedScene" uid="uid://ha0ar5s2c3m4" path="res://Mob.tscn" id="3"]
 [ext_resource type="Theme" uid="uid://cqquurjk1i7yw" path="res://ui_theme.tres" id="4_gnyca"]
-[ext_resource type="Script" uid="uid://2vuj6ay8b0eu" path="res://ScoreLabel.gd" id="6"]
+[ext_resource type="Script" uid="uid://onvb638hnne2" path="res://ScoreLabel.gd" id="6"]
+[ext_resource type="PackedScene" uid="uid://w6q154of4cmf" path="res://Ship/Ship_Large.fbx" id="6_3dxm6"]
+[ext_resource type="FontFile" uid="uid://eemwh1w0flys" path="res://fonts/Arundina.ttf" id="6_wkp8b"]
+[ext_resource type="PackedScene" uid="uid://n87jqhfijjjm" path="res://Rocks-IFU6cm2Xow/Environment_Cliff2.fbx" id="7_trn2v"]
+[ext_resource type="PackedScene" uid="uid://qcbod8hugyfh" path="res://Rocks-e1rgb5i2kF/Environment_Cliff1.fbx" id="8_03owx"]
+[ext_resource type="PackedScene" uid="uid://bdov43jxp3xhy" path="res://Small Ship/Ship_Small.fbx" id="9_03owx"]
 
 [sub_resource type="BoxShape3D" id="1"]
 size = Vector3(60, 2, 60)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lgr22"]
+albedo_color = Color(0, 0.286275, 0.545098, 1)
 
 [sub_resource type="BoxMesh" id="2"]
 size = Vector3(60, 2, 60)
@@ -54,6 +62,7 @@ collision_mask = 0
 shape = SubResource("1")
 
 [node name="MeshInstance" type="MeshInstance3D" parent="Ground"]
+material_override = SubResource("StandardMaterial3D_lgr22")
 mesh = SubResource("2")
 
 [node name="Walls" type="StaticBody3D" parent="."]
@@ -74,7 +83,7 @@ transform = Transform3D(-4.37114e-08, 1, -1.31134e-07, 0, 1.31134e-07, 1, 1, 4.3
 shape = SubResource("WorldBoundaryShape3D_i5n5q")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="Walls"]
-transform = Transform3D(4.37114e-08, -1, 2.18557e-07, 3.82137e-15, -2.18557e-07, -1, 1, 4.37114e-08, -5.73206e-15, 14, 10, -4.76837e-07)
+transform = Transform3D(4.37114e-08, -1, 2.18557e-07, 3.82137e-15, -2.18557e-07, -1, 1, 4.37114e-08, -5.73206e-15, 5.00556, 11.3615, 4.06617)
 shape = SubResource("WorldBoundaryShape3D_i5n5q")
 
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="Walls"]
@@ -180,6 +189,37 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 32
 text = "Press Space or Enter to retry"
+
+[node name="Label" type="Label" parent="UserInterface"]
+layout_mode = 0
+offset_left = 406.0
+offset_top = 4.0
+offset_right = 643.0
+offset_bottom = 39.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_wkp8b")
+theme_override_font_sizes/font_size = 24
+text = "นส พัชรากร อาจสม 663380284-3"
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="Ship_Large" parent="Node3D" instance=ExtResource("6_3dxm6")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -12.441, 1.70466, -6.96561)
+
+[node name="Environment_Cliff2" parent="Node3D" instance=ExtResource("7_trn2v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6718, -2.06292, 16.4996)
+
+[node name="Environment_Cliff1" parent="Node3D" instance=ExtResource("8_03owx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.8927, 0, 16.1402)
+
+[node name="Environment_Cliff3" parent="Node3D" instance=ExtResource("7_trn2v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3202, -0.975607, -12.8111)
+
+[node name="Environment_Cliff4" parent="Node3D" instance=ExtResource("8_03owx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0243, 0, 12.6177)
+
+[node name="Ship_Small" parent="Node3D" instance=ExtResource("9_03owx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.6822, 0, -13.054)
 
 [connection signal="hit" from="Player" to="." method="_on_player_hit"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]

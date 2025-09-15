@@ -11,7 +11,6 @@ signal hit
 ## The downward acceleration when in the air, in meters per second.
 @export var fall_acceleration = 75
 
-@onready var anim_player=$Pivot/Rabbit_Blond/AnimationPlayer2
 
 func _physics_process(delta):
 	var direction = Vector3.ZERO
@@ -29,13 +28,9 @@ func _physics_process(delta):
 		direction = direction.normalized()
 		# Setting the basis property will affect the rotation of the node.
 		basis = Basis.looking_at(direction)
-		#$AnimationPlayer.speed_scale = 4
-		$Pivot/Rabbit_Blond/AnimationPlayer2.speed_scale = 4
-		anim_player.play("CharacterArmature|CharacterArmature|CharacterArmature|Walk")
+		$AnimationPlayer.speed_scale = 4
 	else:
-		#$AnimationPlayer.speed_scale = 1
-		$Pivot/Rabbit_Blond/AnimationPlayer2.speed_scale = 1
-		anim_player.play("CharacterArmature|CharacterArmature|CharacterArmature|Idle")
+		$AnimationPlayer.speed_scale = 1
 
 	velocity.x = direction.x * speed
 	velocity.z = direction.z * speed
@@ -47,6 +42,8 @@ func _physics_process(delta):
 	# We apply gravity every frame so the character always collides with the ground when moving.
 	# This is necessary for the is_on_floor() function to work as a body can always detect
 	# the floor, walls, etc. when a collision happens the same frame.
+	velocity.y -= fall_acceleration * delta
+	move_and_slide()
 
 	# Here, we check if we landed on top of a mob and if so, we kill it and bounce.
 	# With move_and_slide(), Godot makes the body move sometimes multiple times in a row to
@@ -55,8 +52,6 @@ func _physics_process(delta):
 	# If there are no "slides" this frame, the loop below won't run.
 	for index in range(get_slide_collision_count()):
 		var collision = get_slide_collision(index)
-		if collision.get_collider()== null:
-			continue
 		if collision.get_collider().is_in_group("mob"):
 			var mob = collision.get_collider()
 			if Vector3.UP.dot(collision.get_normal()) > 0.1:
@@ -65,8 +60,7 @@ func _physics_process(delta):
 				# Prevent this block from running more than once,
 				# which would award the player more than 1 point for squashing a single mob.
 				break
-	velocity.y -= fall_acceleration * delta
-	move_and_slide()
+
 	# This makes the character follow a nice arc when jumping
 	rotation.x = PI / 6 * velocity.y / jump_impulse
 

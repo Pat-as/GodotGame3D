@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bdov43jxp3xhy"
-path="res://.godot/imported/Ship_Small.fbx-1df3627f95e9d88cda9b546693abc882.scn"
+uid="uid://n87jqhfijjjm"
+path="res://.godot/imported/Environment_Cliff2.fbx-163059f70a7b9ba1e72ca53fc2c3405d.scn"
 
 [deps]
 
-source_file="res://Small Ship/Ship_Small.fbx"
-dest_files=["res://.godot/imported/Ship_Small.fbx-1df3627f95e9d88cda9b546693abc882.scn"]
+source_file="res://Rocks-IFU6cm2Xow/Environment_Cliff2.fbx"
+dest_files=["res://.godot/imported/Environment_Cliff2.fbx-163059f70a7b9ba1e72ca53fc2c3405d.scn"]
 
 [params]
 
